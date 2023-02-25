@@ -109,7 +109,20 @@ ul {
   background: var(--skin-color);
   transition: all 0.3s ease;
 }
-
+.al-btn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 17px;
+  color: white;
+  border-radius: 40px;
+  display: inline-block;
+  border: none;
+  white-space: nowrap;
+  background: var(--skin-color);
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  margin-left: 45px;
+}
 .btn:hover {
   transform: scale(1.05);
 }
@@ -301,7 +314,7 @@ h3.my-profession {
   border-bottom: 10px solid var(--skin-color);
   border-right: 10px solid var(--skin-color);
   right: 50px;
-  bottom: -40px;
+  bottom: -30px;
 }
 .home-img::before {
   content: " ";
@@ -311,13 +324,12 @@ h3.my-profession {
   border-top: 10px solid var(--skin-color);
   border-left: 10px solid var(--skin-color);
   left: 50px;
-  top: -40px;
+  top: -30px;
 }
 .home .home-img img {
   margin: auto;
   border-radius: 5px;
-  height: 350px;
-  width: 350;
+  height: 400px;
 }
 /* About */
 .about .about-content {
