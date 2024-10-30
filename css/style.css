@@ -314,7 +314,7 @@ h3.my-profession {
   border-bottom: 10px solid var(--skin-color);
   border-right: 10px solid var(--skin-color);
   right: 5px;
-  bottom: 120px;
+  bottom: 90px;
 }
 .home-img::before {
   content: " ";
