@@ -75,13 +75,16 @@
             <a href="#about"><i class="fa fa-user"></i>Rreth</a>
           </li>
           <li>
-            <a href="#services"><i class="fa fa-list"></i>Shërbime</a>
+            <a href="#journal"><i class="fa fa-book"></i>Ditari</a>
           </li>
           <li>
-            <a href="#portfolio"><i class="fa fa-briefcase"></i>Dosje</a>
+            <a href="#services"><i class="fa fa-list"></i>Shërbimet</a>
           </li>
           <li>
-            <a href="#contact"><i class="fa fa-comment"></i>Kontakt</a>
+            <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fa fa-comment"></i>Kontakti</a>
           </li>
         </ul>
       </div>
@@ -121,6 +124,31 @@
           </div>
         </section>
         <!-- ======== Home Section End ======== -->
+        <!-- ======== Journal Section Start ======== -->
+        <section class="journal section" id="journal">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Ditari i Mësimit</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="journal-header padd-15">
+                <input
+                  type="date"
+                  id="journal-date"
+                  class="journal-date-picker"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div id="journal-content" class="journal-content padd-15">
+                <!-- Journal content will be loaded here -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ======== Journal Section End ======== -->
         <!-- ======== About Section Start ======== -->
         <section class="about section" id="about">
           <div class="container">
@@ -699,11 +727,13 @@
     <!-- ======== Style Switcher End ======== -->
 
     <!-- ======== JS Files ======== -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
       referrerpolicy="no-referrer"
     ></script>
     <script src="../js/script.js"></script>
+    <script src="../js/journal.js"></script>
     <script src="../js/style-switcher.js"></script>
   </body>
 </html>

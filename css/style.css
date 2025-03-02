@@ -313,8 +313,8 @@ h3.my-profession {
   width: 80px;
   border-bottom: 10px solid var(--skin-color);
   border-right: 10px solid var(--skin-color);
-  right: 5px;
-  bottom: 90px;
+  right: -20px;
+  bottom: -20px;
 }
 .home-img::before {
   content: " ";
@@ -323,8 +323,8 @@ h3.my-profession {
   width: 80px;
   border-top: 10px solid var(--skin-color);
   border-left: 10px solid var(--skin-color);
-  left: 10px;
-  top: -35px;
+  left: -20px;
+  top: -20px;
 }
 .home .home-img img {
   margin: auto;
@@ -695,4 +695,96 @@ h3.my-profession {
     flex: 0 0 100%;
     max-width: 100%;
   }
+}
+
+.journal .journal-header {
+  margin-bottom: 30px;
+}
+
+.journal-date-picker {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid var(--bg-black-50);
+  background-color: var(--bg-black-100);
+  color: var(--text-black-900);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.journal-date-picker:focus {
+  outline: none;
+  border-color: var(--skin-color);
+}
+
+.journal .journal-content {
+  background-color: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 200px;
+}
+
+.journal .markdown-content {
+  line-height: 1.6;
+}
+
+.journal .markdown-content h1,
+.journal .markdown-content h2,
+.journal .markdown-content h3 {
+  margin-bottom: 15px;
+  color: var(--text-black-900);
+}
+
+.journal .markdown-content p {
+  margin-bottom: 15px;
+  color: var(--text-black-700);
+}
+
+/* Dark mode specific styles for journal content */
+body.dark .journal .markdown-content h1,
+body.dark .journal .markdown-content h2,
+body.dark .journal .markdown-content h3 {
+  color: #ffffff;
+}
+
+body.dark .journal .markdown-content p,
+body.dark #journal-content p,
+body.dark .journal .markdown-content li {
+  color: #e9e9e9;
+}
+
+body.dark .journal .markdown-content code {
+  color: #e9e9e9;
+  background-color: #393939;
+}
+
+body.dark .journal .markdown-content pre {
+  background-color: #393939;
+}
+
+/* Add styles for list items in light mode */
+.journal .markdown-content ul,
+.journal .markdown-content ol {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.journal .markdown-content li {
+  color: var(--text-black-700);
+  margin-bottom: 5px;
+}
+
+.journal .markdown-content code {
+  background-color: var(--bg-black-50);
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+.journal .markdown-content pre {
+  background-color: var(--bg-black-50);
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin-bottom: 15px;
 }

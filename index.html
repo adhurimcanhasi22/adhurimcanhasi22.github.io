@@ -73,6 +73,9 @@
             <a href="#about"><i class="fa fa-user"></i>About</a>
           </li>
           <li>
+            <a href="#journal"><i class="fa fa-book"></i>Journal</a>
+          </li>
+          <li>
             <a href="#services"><i class="fa fa-list"></i>Services</a>
           </li>
           <li>
@@ -98,7 +101,7 @@
                   I'm a <span class="typing">Web Developer</span>
                 </h3>
                 <p>
-                  Welcome to my digital playground! I’m a junior programmer
+                  Welcome to my digital playground! I'm a junior programmer
                   specializing in web development and software engineering. With
                   skills in front-end technologies like HTML, CSS, and
                   JavaScript, as well as back-end proficiency in Python, SQL,
@@ -107,7 +110,7 @@
                   technical challenges, ensuring that projects are not only
                   user-friendly but also efficient and robust. If you're looking
                   for a collaborative problem solver with a passion for bringing
-                  ideas to life, I’m here to help!
+                  ideas to life, I'm here to help!
                 </p>
                 <a href="#contact" class="btn hire-me">Hire Me</a>
               </div>
@@ -118,6 +121,31 @@
           </div>
         </section>
         <!-- ======== Home Section End ======== -->
+        <!-- ======== Journal Section Start ======== -->
+        <section class="journal section" id="journal">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Learning Journal</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="journal-header padd-15">
+                <input
+                  type="date"
+                  id="journal-date"
+                  class="journal-date-picker"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div id="journal-content" class="journal-content padd-15">
+                <!-- Journal content will be loaded here -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ======== Journal Section End ======== -->
         <!-- ======== About Section Start ======== -->
         <section class="about section" id="about">
           <div class="container">
@@ -134,14 +162,14 @@
                       I'm Adhurim Canhasi and I'm a <span>Programmer</span>
                     </h3>
                     <p>
-                      Hi! I’m Adhurim Canhasi, a junior programmer and
+                      Hi! I'm Adhurim Canhasi, a junior programmer and
                       final-year Computer and Mechanical Engineering student.
                       With experience in web development, software engineering,
-                      and technical repair, I’m passionate about building
+                      and technical repair, I'm passionate about building
                       reliable, user-friendly solutions. My background includes
                       over a year of programming training and a semester
                       studying abroad in Austria, which gave me a global
-                      perspective and adaptability. I’m always eager to learn,
+                      perspective and adaptability. I'm always eager to learn,
                       problem-solve, and contribute to meaningful projects in
                       tech!
                     </p>
@@ -480,12 +508,12 @@
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
-                <h2>Dosja</h2>
+                <h2>Portfolio</h2>
               </div>
             </div>
             <div class="row">
               <div class="portfolio-heading padd-15">
-                <h2>Projektet E Mia :</h2>
+                <h2>My Projects :</h2>
               </div>
             </div>
             <div class="row">
@@ -690,19 +718,19 @@
         <span class="color-3" onclick="setActiveStyle('color-3')"></span>
         <span class="color-4" onclick="setActiveStyle('color-4')"></span>
         <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-        <a href="https://adhurimcanhasi22.github.io/shqip" class="al-btn"
-          >Shqip</a
-        >
+        
       </div>
     </div>
     <!-- ======== Style Switcher End ======== -->
 
     <!-- ======== JS Files ======== -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
       referrerpolicy="no-referrer"
     ></script>
     <script src="js/script.js"></script>
+    <script src="js/journal.js"></script>
     <script src="js/style-switcher.js"></script>
   </body>
 </html>
