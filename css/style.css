@@ -709,6 +709,8 @@ h3.my-profession {
   color: var(--text-black-900);
   border-radius: 4px;
   cursor: pointer;
+  width: 200px;
+  max-width: 100%;
 }
 
 .journal-date-picker:focus {
@@ -722,22 +724,71 @@ h3.my-profession {
   border-radius: 4px;
   padding: 20px;
   min-height: 200px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .journal .markdown-content {
   line-height: 1.6;
+  width: 100%;
+  max-width: 100%;
 }
 
-.journal .markdown-content h1,
-.journal .markdown-content h2,
-.journal .markdown-content h3 {
-  margin-bottom: 15px;
-  color: var(--text-black-900);
+.journal .markdown-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
 }
 
-.journal .markdown-content p {
-  margin-bottom: 15px;
-  color: var(--text-black-700);
+.journal .markdown-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+  background-color: var(--bg-black-50);
+  border-radius: 4px;
+}
+
+.journal .markdown-content code {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+  .journal .section-title h2 {
+    font-size: 30px;
+  }
+
+  .journal .journal-content {
+    padding: 15px;
+  }
+
+  .journal .markdown-content {
+    font-size: 14px;
+  }
+
+  .journal .markdown-content h1 {
+    font-size: 24px;
+  }
+
+  .journal .markdown-content h2 {
+    font-size: 20px;
+  }
+
+  .journal .markdown-content h3 {
+    font-size: 18px;
+  }
+
+  .journal .markdown-content pre,
+  .journal .markdown-content code {
+    font-size: 12px;
+  }
+
+  .journal-date-picker {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 /* Dark mode specific styles for journal content */
